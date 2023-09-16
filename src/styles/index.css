@@ -14,6 +14,7 @@
     --black: #272829;
     --white: #eee;
     --gray: #7d7c7c;
+    --gray-dark: #454545;
 }
 
 ::-webkit-scrollbar{
@@ -233,7 +234,7 @@ span{
         transition: 300ms ease;
         filter: grayscale(100%) brightness(50%);
     }
-    & img:hover{
+    & .card:hover img{
         transform: scale(1);
         filter: grayscale(0%) brightness(100%);
     }
@@ -247,9 +248,33 @@ span{
             border-radius: 10px;
             box-shadow: -6px -6px 12px #151516,
                          6px 6px 12px #393b3c;
-                         & .contents{
-                            margin: 20px;
-                         }
+            
+            & .contents{
+                margin: 20px;
+                position: relative;
+                & h1{
+                    text-align: right;
+                    font-size: 100px;
+                    color: var(--gray-dark);
+                }
+                & .content{
+                    position: absolute;
+                    bottom: 0;
+                    z-index: 1;
+                    & h3{
+                        font-size: 30px;
+                        font-weight: 700;
+                        color: var(--gray);
+                        margin-bottom: 10px;
+                    }
+                    & p{
+                        line-height: 30px;
+                        color: var(--white);
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                }
+            }
         }
     }
 }

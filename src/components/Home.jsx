@@ -54,56 +54,56 @@ function Home() {
           </div>
           
           <div className="card">
-            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
+            <img src={require('../assets/images/image3.jpg')} alt="CLassImage" />
             <div className="contents">
-              <h1>01</h1>
+              <h1>02</h1>
               <div className="content">
-                <h3>Weight training</h3>
+                <h3>Cross fit</h3>
+                <p>CrossFit is a conditioning workout made up of high-intensity functional exercises.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={require('../assets/images/image4.jpg')} alt="CLassImage" />
+            <div className="contents">
+              <h1>03</h1>
+              <div className="content">
+                <h3>Pilates</h3>
+                <p>Pilates exercises develop the body through constant muscular effort.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={require('../assets/images/image5.jpg')} alt="CLassImage" />
+            <div className="contents">
+              <h1>04</h1>
+              <div className="content">
+                <h3>Yoga</h3>
                 <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
               </div>
             </div>
           </div>
 
           <div className="card">
-            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
+            <img src={require('../assets/images/image6.jpg')} alt="CLassImage" />
             <div className="contents">
-              <h1>01</h1>
+              <h1>05</h1>
               <div className="content">
-                <h3>Weight training</h3>
-                <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
+                <h3>Boxing</h3>
+                <p>Boxing workouts include intense exercises aimed at strengthening your whole body.</p>
               </div>
             </div>
           </div>
 
           <div className="card">
-            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
+            <img src={require('../assets/images/image7.jpg')} alt="CLassImage" />
             <div className="contents">
-              <h1>01</h1>
+              <h1>06</h1>
               <div className="content">
-                <h3>Weight training</h3>
-                <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
-            <div className="contents">
-              <h1>01</h1>
-              <div className="content">
-                <h3>Weight training</h3>
-                <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
-            <div className="contents">
-              <h1>01</h1>
-              <div className="content">
-                <h3>Weight training</h3>
-                <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
+                <h3>Aerobics</h3>
+                <p>Aerobics is a great way to build endurance through simple yet effective training.</p>
               </div>
             </div>
           </div>

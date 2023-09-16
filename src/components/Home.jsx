@@ -153,14 +153,71 @@ function Home() {
         </div>
         <div className="gallery" ref={tabsBoxRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ cursor: isDragging ? 'grabbing' : 'grab' }} > 
           <div className="gallery_item">
-            <img src={require('../assets/images/teacherOne.jpg')} alt="" />
-            <img src={require('../assets/images/teacherTwo.jpg')} alt="" />
-            <img src={require('../assets/images/teacherThree.jpg')} alt="" />
-          </div>
-          <div className="gallery_item">
-            <img src={require('../assets/images/teacherFour.jpg')} alt="" />
-            <img src={require('../assets/images/teacherFive.jpg')} alt="" />
-            <img src={require('../assets/images/teacherSix.jpg')} alt="" />
+            <div className="contents">
+              <div className="img">
+                <img src={require('../assets/images/teacherOne.jpg')} alt="memberImage" />
+                <ul>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-whatsapp"></i></li>
+                  <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+              </div>
+              <h3>Ira Bonte</h3>
+              <p><span>Yoga, coach</span></p>
+            </div>
+            <div className="contents">
+              <div className="img">
+                <img src={require('../assets/images/teacherTwo.jpg')} alt="memberImage" />
+                <ul>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-whatsapp"></i></li>
+                  <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+              </div>
+              <h3>Brunel Ngabo</h3>
+              <p><span>Cross fit, coach</span></p>
+            </div>
+            <div className="contents">
+              <div className="img">
+                <img src={require('../assets/images/teacherThree.jpg')} alt="memberImage" />
+                <ul>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-whatsapp"></i></li>
+                  <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+              </div>
+              <h3>Liliose G</h3>
+              <p><span>Pilates, coach</span></p>
+            </div>
+            <div className="contents">
+              <div className="img">
+                <img src={require('../assets/images/teacherFour.jpg')} alt="memberImage" />
+                <ul>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-whatsapp"></i></li>
+                  <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+              </div>
+              <h3>Wilson Nshizi</h3>
+              <p><span>Fitness trainer</span></p>
+            </div>
+            <div className="contents">
+              <div className="img">
+                <img src={require('../assets/images/teacherFive.jpg')} alt="memberImage" />
+                <ul>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-whatsapp"></i></li>
+                  <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+              </div>
+              <h3>Bruno Rwanda</h3>
+              <p><span>Boxing, coach</span></p>
+            </div>
           </div>
         </div>
       </section>

@@ -146,25 +146,21 @@ function Home() {
         </div>
       </section>
       <section id="team">
-        {/* <div className="gallery"> */}
-        <div      className="gallery"      ref={tabsBoxRef}      onMouseDown={handleMouseDown}      onMouseMove={handleMouseMove}      onMouseUp={handleMouseUp}      onMouseEnter={handleMouseEnter}      onMouseLeave={handleMouseLeave}      style={{ cursor: isDragging ? 'grabbing' : 'grab' }} > 
+        <div className="title">
+          <h2>Meet our team members</h2>
+          <div className="line"></div>
+          <p><span>Nature Fitness Hub</span> is a team of qualified, friendly, and helpful coaches always ready to help you achieve your goals in various types of workouts.</p>
+        </div>
+        <div className="gallery" ref={tabsBoxRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ cursor: isDragging ? 'grabbing' : 'grab' }} > 
           <div className="gallery_item">
-            <img src={require('../assets/images/image7.jpg')} alt="" />
+            <img src={require('../assets/images/teacherOne.jpg')} alt="" />
+            <img src={require('../assets/images/teacherTwo.jpg')} alt="" />
+            <img src={require('../assets/images/teacherThree.jpg')} alt="" />
           </div>
           <div className="gallery_item">
-            <img src={require('../assets/images/image8.jpg')} alt="" />
-          </div>
-          <div className="gallery_item">
-            <img src={require('../assets/images/image9.jpg')} alt="" />
-          </div>
-          <div className="gallery_item">
-            <img src={require('../assets/images/image10.jpg')} alt="" />
-          </div>
-          <div className="gallery_item">
-            <img src={require('../assets/images/image11.jpg')} alt="" />
-          </div>
-          <div className="gallery_item">
-            <img src={require('../assets/images/image12.jpg')} alt="" />
+            <img src={require('../assets/images/teacherFour.jpg')} alt="" />
+            <img src={require('../assets/images/teacherFive.jpg')} alt="" />
+            <img src={require('../assets/images/teacherSix.jpg')} alt="" />
           </div>
         </div>
       </section>

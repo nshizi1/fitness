@@ -88,6 +88,12 @@ header.sticky{
         border-radius: 6px;
         background-color: var(--primary--color);
     }
+    & p{
+        width: 65%;
+        line-height: 30px;
+        margin-top: 20px;
+        color: var(--white);
+    }
 }
 span{
     color: var(--primary--color);
@@ -220,13 +226,6 @@ span{
     padding: 100px 5% 50px 5%;
     color: var(--white);
     background-color: var(--black);
-    & .title{
-        & p{
-            width: 65%;
-            line-height: 30px;
-            margin-top: 20px;
-        }
-    }
 
     & img{
         width: 100%;
@@ -283,11 +282,17 @@ span{
 #team{
     padding: 50px 5%;
     background-color: var(--black);
+    ::-webkit-scrollbar{
+        display: none;
+    }
     & img{
-        width: 100%;
+        width: 400px;
         height: 500px;
         border-radius: 10px;
         object-fit: cover;
+    }
+    & img:hover{
+        cursor: pointer;
     }
     & .gallery{
         display: flex;
@@ -298,7 +303,6 @@ span{
         scroll-padding: 24px;
     }
     & .gallery_item{
-        flex: 0 0 100%;
         scroll-snap-align: start;
         display: flex;
         gap: 12px;

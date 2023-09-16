@@ -7,6 +7,7 @@
     box-sizing: border-box;
     user-select: none;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -26,6 +27,7 @@
     border-radius: 20px;
 }
 
+
 .progress-bar {
     position: fixed;
     top: 0;
@@ -33,7 +35,7 @@
     right: 0;
     height: 5px;
     background-color: var(--primary--color);
-    z-index: 2;
+    z-index: 5;
     transform-origin: 0%;
   }
 
@@ -277,4 +279,29 @@ span{
             }
         }
     }
+}
+#team{
+    padding: 50px 5%;
+    background-color: var(--black);
+    & img{
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    & .gallery{
+        display: flex;
+        overflow: auto;
+        /* scroll-snap-type: x mandatory; */
+        padding: 24px;
+        gap:  12px;
+        scroll-padding: 24px;
+    }
+    & .gallery_item{
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        display: flex;
+        gap: 12px;
+    }
+
 }

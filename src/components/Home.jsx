@@ -1,6 +1,41 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 
 function Home() {
+  const tabsBoxRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(null);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.clientX);
+    setScrollLeft(tabsBoxRef.current.scrollLeft);
+    e.preventDefault(); // Prevents text selection during drag
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    const x = e.clientX - startX;
+    tabsBoxRef.current.scrollLeft = scrollLeft - x;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+    document.body.style.cursor = 'auto'; // Reset cursor to default
+  };
+
+  const handleMouseEnter = () => {
+    if (isDragging) {
+      document.body.style.cursor = 'grabbing'; // Set cursor to grabbing when entering the gallery
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (isDragging) {
+      document.body.style.cursor = 'grab'; // Set cursor to grab when leaving the gallery
+    }
+  };
+      
   return (
     <main id='main'>
       <section id="home">
@@ -108,6 +143,29 @@ function Home() {
             </div>
           </div>
           
+        </div>
+      </section>
+      <section id="team">
+        {/* <div className="gallery"> */}
+        <div      className="gallery"      ref={tabsBoxRef}      onMouseDown={handleMouseDown}      onMouseMove={handleMouseMove}      onMouseUp={handleMouseUp}      onMouseEnter={handleMouseEnter}      onMouseLeave={handleMouseLeave}      style={{ cursor: isDragging ? 'grabbing' : 'grab' }} > 
+          <div className="gallery_item">
+            <img src={require('../assets/images/image7.jpg')} alt="" />
+          </div>
+          <div className="gallery_item">
+            <img src={require('../assets/images/image8.jpg')} alt="" />
+          </div>
+          <div className="gallery_item">
+            <img src={require('../assets/images/image9.jpg')} alt="" />
+          </div>
+          <div className="gallery_item">
+            <img src={require('../assets/images/image10.jpg')} alt="" />
+          </div>
+          <div className="gallery_item">
+            <img src={require('../assets/images/image11.jpg')} alt="" />
+          </div>
+          <div className="gallery_item">
+            <img src={require('../assets/images/image12.jpg')} alt="" />
+          </div>
         </div>
       </section>
     </main>

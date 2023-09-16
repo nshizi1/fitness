@@ -23,15 +23,91 @@ function Home() {
             <div className='form'>
               <div className="input">
                 <i class="fa-solid fa-user"></i>
-                <input type="text" name="name" placeholder='Your names *'/>
+                <input type="text" name="name" placeholder='Your names *' autoComplete='off'/>
               </div>
               <div className="input">
                 <i class="fa-solid fa-phone"></i>
-                <input type="tel" name="name" placeholder='Your Phone *'/>
+                <input type="tel" name="name" placeholder='Your Phone *' autoComplete='off'/>
               </div>
               <button type="submit">Book a workout</button>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="class">
+        <div className="title">
+          <h2>Our classes</h2>
+          <div className="line"></div>
+          <p>At <span>Nature Fitness Hub</span>, we offer a wide range of workouts and classes for everyone. Whatever your goal is, rest assured that our coaches have what you prefer.</p>
+        </div>
+        <div className="cards">
+
+          <div className="card">
+            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
+            <div className="contents">
+              <h1>01</h1>
+              <div className="content">
+                <h3>Weight training</h3>
+                <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="card">
+            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
+            <div className="contents">
+              <h1>01</h1>
+              <div className="content">
+                <h3>Weight training</h3>
+                <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
+            <div className="contents">
+              <h1>01</h1>
+              <div className="content">
+                <h3>Weight training</h3>
+                <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
+            <div className="contents">
+              <h1>01</h1>
+              <div className="content">
+                <h3>Weight training</h3>
+                <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
+            <div className="contents">
+              <h1>01</h1>
+              <div className="content">
+                <h3>Weight training</h3>
+                <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={require('../assets/images/image1.jpg')} alt="CLassImage" />
+            <div className="contents">
+              <h1>01</h1>
+              <div className="content">
+                <h3>Weight training</h3>
+                <p>Modern yoga helps you boost physical and mental well-being through exercises.</p>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </section>
     </main>

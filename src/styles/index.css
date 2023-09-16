@@ -25,9 +25,16 @@
     border-radius: 20px;
 }
 
-
-
-
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: var(--primary--color);
+    z-index: 2;
+    transform-origin: 0%;
+  }
 
 header{
     position: fixed;
@@ -138,7 +145,7 @@ span{
 
 #about{
     background-color: var(--black);
-    padding: 50px 5%;
+    padding: 100px 5%;
     color: var(--white);
     & .contents{
         display: grid;
@@ -202,6 +209,47 @@ span{
                     border-color: var(--white);
                 }
             }
+        }
+    }
+}
+
+#class{
+    padding: 100px 5% 50px 5%;
+    color: var(--white);
+    background-color: var(--black);
+    & .title{
+        & p{
+            width: 65%;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+    }
+
+    & img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transform: scale(1.05);
+        transition: 300ms ease;
+        filter: grayscale(100%) brightness(50%);
+    }
+    & img:hover{
+        transform: scale(1);
+        filter: grayscale(0%) brightness(100%);
+    }
+
+    & .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        & .card{
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: -6px -6px 12px #151516,
+                         6px 6px 12px #393b3c;
+                         & .contents{
+                            margin: 20px;
+                         }
         }
     }
 }

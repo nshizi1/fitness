@@ -221,6 +221,50 @@ function Home() {
           </div>
         </div>
       </section>
+      <section id="pricing">
+        <div className="title">
+          <h2>Select your pricing plan</h2>
+          <div className="line"></div>
+          <p>We offer three varied pricing plans to satisfy the needs of every customer. From group training to individual workouts, there’s something for everyone.</p>
+        </div>
+        <div className="cards">
+          <div className="card">
+            <h4>Basic</h4>
+            <h1>$40.00</h1>
+            <ul>
+              <li>Gym</li>
+              <li>Yoga</li>
+            </ul>
+            <button>Choose</button>
+          </div>
+
+          <div className="card">
+            <h4>Standard</h4>
+            <h1>$70.00</h1>
+            <ul>
+              <li>Gym</li>
+              <li>Yoga</li>
+              <li>Cross fit</li>
+              <li>Pilates</li>
+            </ul>
+            <button>Choose</button>
+          </div>
+
+          <div className="card">
+            <h4>Premium</h4>
+            <h1>$100.00</h1>
+            <ul>
+              <li>Gym</li>
+              <li>Yoga</li>
+              <li>Cross fit</li>
+              <li>Pilates</li>
+              <li>Boxing</li>
+              <li>Personal Coach</li>
+            </ul>
+            <button>Choose</button>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }

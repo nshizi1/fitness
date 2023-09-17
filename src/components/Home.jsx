@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import Accordion from './Accordion';
 
 function Home() {
   const tabsBoxRef = useRef(null);
@@ -265,6 +266,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Accordion />
     </main>
   )
 }

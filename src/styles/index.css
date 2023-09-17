@@ -417,59 +417,6 @@ span{
 
 
 
-.wrapper{
-    display: flex;
-    /* height: 80vh; */
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 5% 50px 5%;
-    background-color: var(--black);
-    & .accordion{
-        width: 100%;
-    }
-    & .item{
-        box-shadow: -6px -6px 12px #151516,
-                         6px 6px 12px #393b3c;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 15px;
-        & .title{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            & span{
-                color: var(--gray-dark);
-                background-color: var(--primary--color);
-                font-size: 30px;
-                width: 30px;
-                height: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 30px;
-                font-weight: 800;
-            }
-        }
-        & .title h2{
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--white);
-        }
-        & .content{
-            color: var(--white);
-            max-height: 0;
-            overflow: hidden;
-            transition: all .5s cubic-bezier(0,1,0,1);
-        }
-        & .content.show{
-            height: auto;
-            max-height: 9999px;
-            transition: all .5s cubic-bezier(1,0,1,0);
-        }
-    }
-}
 
 
 

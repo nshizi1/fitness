@@ -19,14 +19,40 @@ function Accordion() {
             {data.map((item, i) => (
                 <div className="item">
                     <div className="title" onClick={() => toggle(i)}>
-                        <h2>{item.question}</h2>
+                        <h2>{item.day}</h2>
                         <span>{selected === i ? '-' : '+'}</span>
                     </div>
-                    {/* <div className={selected === i ? 'content show' : 'content'}>{item.answer}</div> */}
-                    {/* <div className={selected === i ? 'content show' : 'content'}>{item.response}</div> */}
                     <div className={selected === i ? 'content show' : 'content'}>
-                        <div className="card">{item.answer}</div>
-                        <div className="card">{item.response}</div>
+                        <div className="cards">
+                            <div className="card">
+                                <p>{item.cardOne[0]}</p>
+                                <p>{item.cardOne[1]}</p>
+                                <div className="line"></div>
+                                <p>{item.cardOne[2]}</p>
+                                <p>{item.cardOne[3]}</p>
+                            </div>
+                            <div className="card">
+                                <p>{item.cardTwo[0]}</p>
+                                <p>{item.cardTwo[1]}</p>
+                                <div className="line"></div>
+                                <p>{item.cardTwo[2]}</p>
+                                <p>{item.cardTwo[3]}</p>
+                            </div>
+                            <div className="card">
+                                <p>{item.cardThree[0]}</p>
+                                <p>{item.cardThree[1]}</p>
+                                <div className="line"></div>
+                                <p>{item.cardThree[2]}</p>
+                                <p>{item.cardThree[3]}</p>
+                            </div>
+                            <div className="card">
+                                <p>{item.cardFour[0]}</p>
+                                <p>{item.cardFour[1]}</p>
+                                <div className="line"></div>
+                                <p>{item.cardFour[2]}</p>
+                                <p>{item.cardFour[3]}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             ))}
@@ -37,30 +63,54 @@ function Accordion() {
 
 const data = [
     {
-        question: 'Question One',
-        answer: 'Interested in joining.',
-        response: 'Interested in joining.'
+        day: 'Monday',
+        cardOne : ['10:00','cross fit', '60 min', 'ethan bell'],
+        cardTwo : ['11:00','pilates', '90 min', 'jenny mcKinney'],
+        cardThree : ['12:30','boxing', '120 min', 'michael lee'],
+        cardFour : ['14:30','yoga', '90 min', 'annie smith']
     },
     {
-        question: 'Question Two',
-        answer: 'Interested in joining.',
-        response: 'Interested in joining.'
+        day: 'Tuesday',
+        cardOne : ['10:00','cross fit', '60 min', 'ethan bell'],
+        cardTwo : ['11:00','pilates', '90 min', 'jenny mcKinney'],
+        cardThree : [],
+        cardFour : ['14:30','yoga', '90 min', 'annie smith']
     },
     {
-        question: 'Question Three',
-        answer: 'Interested in joining.',
-        response: 'Interested in joining.'
+        day: 'Wednesday',
+        cardOne : ['10:00','cross fit', '60 min', 'ethan bell'],
+        cardTwo : ['11:00','pilates', '90 min', 'jenny mcKinney'],
+        cardThree : ['12:30','boxing', '120 min', 'michael lee'],
+        cardFour : ['14:30','yoga', '90 min', 'annie smith']
     },
     {
-        question: 'Question Four',
-        answer: 'Interested in joining.',
-        response: 'Interested in joining.'
+        day: 'Thursday',
+        cardOne : ['10:00','cross fit', '60 min', 'ethan bell'],
+        cardTwo : ['11:00','pilates', '90 min', 'jenny mcKinney'],
+        cardThree : ['12:30','boxing', '120 min', 'michael lee'],
+        cardFour : ['14:30','yoga', '90 min', 'annie smith']
     },
     {
-        question: 'Question Five',
-        answer: 'Interested in joining.',
-        response: 'Interested in joining.'
+        day: 'Friday',
+        cardOne : ['10:00','cross fit', '60 min', 'ethan bell'],
+        cardTwo : ['11:00','pilates', '90 min', 'jenny mcKinney'],
+        cardThree : ['12:30','boxing', '120 min', 'michael lee'],
+        cardFour : ['14:30','yoga', '90 min', 'annie smith']
     },
+    {
+        day: 'Saturday',
+        cardOne : ['10:00','cross fit', '60 min', 'ethan bell'],
+        cardTwo : ['11:00','pilates', '90 min', 'jenny mcKinney'],
+        cardThree : ['12:30','boxing', '120 min', 'michael lee'],
+        cardFour : ['14:30','yoga', '90 min', 'annie smith']
+    },
+    {
+        day: 'SUnday',
+        cardOne : ['10:00','cross fit', '60 min', 'ethan bell'],
+        cardTwo : ['11:00','pilates', '90 min', 'jenny mcKinney'],
+        cardThree : ['12:30','boxing', '120 min', 'michael lee'],
+        cardFour : ['14:30','yoga', '90 min', 'annie smith']
+    }
 ]
 
 export default Accordion;

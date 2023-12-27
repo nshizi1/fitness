@@ -286,7 +286,8 @@ span{
     background-color: var(--black);
     & img{
         width: 100%;
-        aspect-ratio: .7;
+        /* aspect-ratio: .7; */
+        height: 60vh;
         border-radius: 10px;
         object-fit: cover;
         filter: brightness(70%);
@@ -297,6 +298,7 @@ span{
     }
     & .gallery_item{
         & .contents{
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -306,11 +308,11 @@ span{
         bottom: 0;
     }
     & .img{
+        width: 100%;
         position: relative;
         overflow: hidden;
         border-radius: 15px;
-        box-shadow: -6px -6px 12px #151516,
-                             6px 6px 12px #393b3c;
+        box-shadow: 6px 6px 12px #393b3c;
         & ul{
             position: absolute;
             bottom: -46px;

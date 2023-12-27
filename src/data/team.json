@@ -1,0 +1,54 @@
+{
+    "team": [
+        {
+            "id": 1,
+            "name": "Oliver Parker",
+            "role": "Personal Trainer",
+            "facebook": "lorem",
+            "twitter": "lorem",
+            "instagram": "lorem",
+            "whatsapp": "lorem",
+            "image": "teacherTwo.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Sophia Johnson",
+            "role": "Yoga Instructor",
+            "facebook": "lorem",
+            "twitter": "lorem",
+            "instagram": "lorem",
+            "whatsapp": "lorem",
+            "image": "teacherOne.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Gabriel Ramirez",
+            "role": "Strength and Conditioning Coach",
+            "facebook": "lorem",
+            "twitter": "lorem",
+            "instagram": "lorem",
+            "whatsapp": "lorem",
+            "image": "teacherFour.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Isabella Chang",
+            "role": "Pilates Instructor",
+            "facebook": "lorem",
+            "twitter": "lorem",
+            "instagram": "lorem",
+            "whatsapp": "lorem",
+            "image": "teacherThree.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Xavier Anderson",
+            "role": "Nutritionist and Wellness Coach",
+            "facebook": "lorem",
+            "twitter": "lorem",
+            "instagram": "lorem",
+            "whatsapp": "lorem",
+            "image": "teacherFive.jpg"
+        }
+    ]
+}

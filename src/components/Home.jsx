@@ -1,40 +1,12 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
+import data from '../data/team.json';
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 function Home() {
-  const tabsBoxRef = useRef(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(null);
-  const [scrollLeft, setScrollLeft] = useState(0);
 
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
-    setStartX(e.clientX);
-    setScrollLeft(tabsBoxRef.current.scrollLeft);
-    e.preventDefault(); // Prevents text selection during drag
-  };
-
-  const handleMouseMove = (e) => {
-    if (!isDragging) return;
-    const x = e.clientX - startX;
-    tabsBoxRef.current.scrollLeft = scrollLeft - x;
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-    document.body.style.cursor = 'auto'; // Reset cursor to default
-  };
-
-  const handleMouseEnter = () => {
-    if (isDragging) {
-      document.body.style.cursor = 'grabbing'; // Set cursor to grabbing when entering the gallery
-    }
-  };
-
-  const handleMouseLeave = () => {
-    if (isDragging) {
-      document.body.style.cursor = 'grab'; // Set cursor to grab when leaving the gallery
-    }
-  };
+  const team = data.team;
       
   return (
     <main id='main'>
@@ -151,75 +123,25 @@ function Home() {
           <div className="line"></div>
           <p><span>Nature Fitness Hub</span> is a team of qualified, friendly, and helpful coaches always ready to help you achieve your goals in various types of workouts.</p>
         </div>
-        <div className="gallery" ref={tabsBoxRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{ cursor: isDragging ? 'grabbing' : 'grab' }} > 
-          <div className="gallery_item">
-            <div className="contents">
-              <div className="img">
-                <img src={require('../assets/images/teacherOne.jpg')} alt="memberImage" />
-                <ul>
-                  <li><i class="fa-brands fa-twitter"></i></li>
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-whatsapp"></i></li>
-                  <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-              </div>
-              <h3>Ira Bonte</h3>
-              <p><span>Yoga, coach</span></p>
-            </div>
-            <div className="contents">
-              <div className="img">
-                <img src={require('../assets/images/teacherTwo.jpg')} alt="memberImage" />
-                <ul>
-                  <li><i class="fa-brands fa-twitter"></i></li>
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-whatsapp"></i></li>
-                  <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-              </div>
-              <h3>Brunel Ngabo</h3>
-              <p><span>Cross fit, coach</span></p>
-            </div>
-            <div className="contents">
-              <div className="img">
-                <img src={require('../assets/images/teacherThree.jpg')} alt="memberImage" />
-                <ul>
-                  <li><i class="fa-brands fa-twitter"></i></li>
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-whatsapp"></i></li>
-                  <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-              </div>
-              <h3>Liliose G</h3>
-              <p><span>Pilates, coach</span></p>
-            </div>
-            <div className="contents">
-              <div className="img">
-                <img src={require('../assets/images/teacherFour.jpg')} alt="memberImage" />
-                <ul>
-                  <li><i class="fa-brands fa-twitter"></i></li>
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-whatsapp"></i></li>
-                  <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-              </div>
-              <h3>Wilson Nshizi</h3>
-              <p><span>Fitness trainer</span></p>
-            </div>
-            <div className="contents">
-              <div className="img">
-                <img src={require('../assets/images/teacherFive.jpg')} alt="memberImage" />
-                <ul>
-                  <li><i class="fa-brands fa-twitter"></i></li>
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-whatsapp"></i></li>
-                  <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-              </div>
-              <h3>Bruno Rwanda</h3>
-              <p><span>Boxing, coach</span></p>
-            </div>
-          </div>
-        </div>
+        <Swiper className="gallery" spaceBetween={10} slidesPerView={1} loop={true} breakpoints={{768:{slidesPerView: 2,spaceBetween: 20,},1024:{slidesPerView: 3,spaceBetween: 30,},1920:{slidesPerView: 4,spaceBetween: 40,},}} autoplay={{delay: 3000, disableOnInteraction: false,}} scrollbar={{ draggable: true }} modules={[Autoplay]} > 
+          {team.map(member =>(
+            <SwiperSlide className="gallery_item" key={member.id}>
+                <div className="contents" >
+                  <div className="img">
+                    <img src={require(`../assets/images/${member.image}`)} alt={member.name} />
+                    <ul>
+                      <li><a href={member.twitter}><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href={member.facebook}><i class="fa-brands fa-facebook"></i></a></li>
+                      <li><a href={member.whatsapp}><i class="fa-brands fa-whatsapp"></i></a></li>
+                      <li><a href={member.instagram}><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                  <h3>{member.name}</h3>
+                  <p><span>{member.role}</span></p>
+                </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
       <section id="pricing">
         <div className="title">

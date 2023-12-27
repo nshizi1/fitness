@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-user-select: none;
     user-select: none;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -283,31 +284,18 @@ span{
 #team{
     padding: 100px 5% 50px 5%;
     background-color: var(--black);
-    ::-webkit-scrollbar{
-        display: none;
-    }
     & img{
-        width: 400px;
-        height: 500px;
+        width: 100%;
+        aspect-ratio: .7;
         border-radius: 10px;
         object-fit: cover;
         filter: brightness(70%);
+        transition: 200ms ease;
     }
-    & img:hover{
-        cursor: pointer;
-    }
-    & .gallery{
-        display: flex;
-        overflow: auto;
-        /* scroll-snap-type: x mandatory; */
-        padding: 24px;
-        gap:  12px;
-        scroll-padding: 24px;
+    & .gallery_item:hover img{
+        filter: brightness(100%);
     }
     & .gallery_item{
-        scroll-snap-align: start;
-        display: flex;
-        gap: 30px;
         & .contents{
             display: flex;
             flex-direction: column;

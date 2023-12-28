@@ -3,10 +3,19 @@ import data from '../data/team.json';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Home() {
 
   const team = data.team;
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
       
   return (
     <main id='main'>
@@ -185,6 +194,33 @@ function Home() {
             </ul>
             <button>Choose</button>
           </div>
+        </div>
+      </section>
+      <section id="schedule">
+        <div className="title">
+          <h2>Our Schedule</h2>
+          <div className="line"></div>
+          <p>Interested in joining our classes and workouts? Consult the schedule below to find out when our workouts take place. You can also learn more about each class duration below.</p>
+        </div>
+        <div className="contents">
+          <Accordion className="accordion" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+            <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Monday</AccordionSummary>
+            <AccordionDetails>
+              <p> By following these steps, you should be able to resolve the 'Module not found' error related  </p>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="accordion" expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+            <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Monday</AccordionSummary>
+            <AccordionDetails>
+              <p> By following these steps, you should be able to resolve the 'Module not found' error related  </p>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="accordion" expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+            <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Monday</AccordionSummary>
+            <AccordionDetails>
+              <p> By following these steps, you should be able to resolve the 'Module not found' error related  </p>
+            </AccordionDetails>
+          </Accordion>
         </div>
       </section>
     </main>

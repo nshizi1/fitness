@@ -501,6 +501,9 @@ span{
     #about{
         & .contents{
             grid-template-columns: repeat(1, 1fr);
+            & .form{
+                padding: 10px 15px;
+            }
         }
     }
 }

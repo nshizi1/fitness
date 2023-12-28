@@ -428,6 +428,38 @@ span{
             color: var(--primary--color);
             font-size: 35px;
         }
+        & .cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+            & .card{
+                padding: 20px;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                box-shadow: inset -6px -6px 12px #393b3c,
+                        inset 6px 6px 12px #151516;
+                & .line{
+                    width: 100%;
+                    height: 2px;
+                    background-color: var(--primary--color);
+                }
+                & .up, .down{
+                    display: flex;
+                    justify-content: space-between;
+                    & h3{
+                        color: var(--gray);
+                    }
+                }
+                & .down div{
+                    display: flex;
+                    gap: .6rem;
+                    color: var(--gray);
+                    font-weight: 600;
+                }
+            }
+        }
     }
 }
 

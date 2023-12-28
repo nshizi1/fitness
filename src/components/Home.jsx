@@ -205,20 +205,75 @@ function Home() {
         <div className="contents">
           <Accordion className="accordion" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Monday</AccordionSummary>
-            <AccordionDetails>
-              <p> By following these steps, you should be able to resolve the 'Module not found' error related  </p>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion className="accordion" expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-            <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Monday</AccordionSummary>
-            <AccordionDetails>
-              <p> By following these steps, you should be able to resolve the 'Module not found' error related  </p>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion className="accordion" expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-            <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Monday</AccordionSummary>
-            <AccordionDetails>
-              <p> By following these steps, you should be able to resolve the 'Module not found' error related  </p>
+            <AccordionDetails className="cards">
+              <div className="card">
+                <div className="up">
+                  <h3>10:00</h3>
+                  <span>Morning Yoga</span>
+                </div>
+                <div className="line"></div>
+                <div className="down">
+                  <div>
+                    <i class="fa-regular fa-clock"></i>
+                    <p>60 min</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-user"></i>
+                    <p>Isabella Chang</p>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div className="up">
+                  <h3>10:00</h3>
+                  <span>Morning Yoga</span>
+                </div>
+                <div className="line"></div>
+                <div className="down">
+                  <div>
+                    <i class="fa-regular fa-clock"></i>
+                    <p>60 min</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-user"></i>
+                    <p>Isabella Chang</p>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div className="up">
+                  <h3>10:00</h3>
+                  <span>Morning Yoga</span>
+                </div>
+                <div className="line"></div>
+                <div className="down">
+                  <div>
+                    <i class="fa-regular fa-clock"></i>
+                    <p>60 min</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-user"></i>
+                    <p>Isabella Chang</p>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div className="up">
+                  <h3>10:00</h3>
+                  <span>Morning Yoga</span>
+                </div>
+                <div className="line"></div>
+                <div className="down">
+                  <div>
+                    <i class="fa-regular fa-clock"></i>
+                    <p>60 min</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-user"></i>
+                    <p>Isabella Chang</p>
+                  </div>
+                </div>
+              </div>
             </AccordionDetails>
           </Accordion>
         </div>

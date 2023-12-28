@@ -545,9 +545,10 @@ span{
         & p{
             width: 100%;
         }
-        /* & button{
-
-        } */
+        & button{
+            font-size: 15px;
+            padding: 10px 20px;
+        }
     }
 }
 

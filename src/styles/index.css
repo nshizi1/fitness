@@ -536,6 +536,19 @@ span{
             font-weight: 500;
         }
     }
+    #home{
+        align-items: center;
+        text-align: center;
+        & h1{
+            font-size: 25px;
+        }
+        & p{
+            width: 100%;
+        }
+        /* & button{
+
+        } */
+    }
 }
 
 

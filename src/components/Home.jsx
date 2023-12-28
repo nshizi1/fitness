@@ -1,12 +1,13 @@
 import React from 'react';
-import data from '../data/team.json';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import 'swiper/css';
+import data from '../data/team.json';
+import days from '../data/schedule.json';
 
 function Home() {
 
@@ -16,6 +17,12 @@ function Home() {
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
+
+  const monday = days.monday;
+  const tuesday = days.tuesday;
+  const wednesday = days.wednesday;
+  const thursday = days.thursday;
+  const friday = days.friday;
       
   return (
     <main id='main'>
@@ -206,23 +213,121 @@ function Home() {
           <Accordion className="accordion" expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Monday</AccordionSummary>
             <AccordionDetails className="cards">
-              <div className="card">
-                <div className="up">
-                  <h3>10:00</h3>
-                  <span>Morning Yoga</span>
-                </div>
-                <div className="line"></div>
-                <div className="down">
-                  <div>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60 min</p>
+              {monday.map(monday =>(
+                <div className="card" key={monday.id}>
+                  <div className="up">
+                    <h3>{monday.time}</h3>
+                    <span>{monday.exercise}</span>
                   </div>
-                  <div>
-                    <i class="fa-solid fa-user"></i>
-                    <p>Isabella Chang</p>
+                  <div className="line"></div>
+                  <div className="down">
+                    <div>
+                      <i class="fa-regular fa-clock"></i>
+                      <p>{monday.duration}</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-user"></i>
+                      <p>{monday.trainer}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="accordion" expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+            <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Tuesday</AccordionSummary>
+            <AccordionDetails className="cards">
+              {tuesday.map(tuesday =>(
+                <div className="card" key={tuesday.id}>
+                  <div className="up">
+                    <h3>{tuesday.time}</h3>
+                    <span>{tuesday.exercise}</span>
+                  </div>
+                  <div className="line"></div>
+                  <div className="down">
+                    <div>
+                      <i class="fa-regular fa-clock"></i>
+                      <p>{tuesday.duration}</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-user"></i>
+                      <p>{tuesday.trainer}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="accordion" expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+            <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Wednesday</AccordionSummary>
+            <AccordionDetails className="cards">
+              {wednesday.map(wednesday =>(
+                <div className="card" key={wednesday.id}>
+                  <div className="up">
+                    <h3>{wednesday.time}</h3>
+                    <span>{wednesday.exercise}</span>
+                  </div>
+                  <div className="line"></div>
+                  <div className="down">
+                    <div>
+                      <i class="fa-regular fa-clock"></i>
+                      <p>{wednesday.duration}</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-user"></i>
+                      <p>{wednesday.trainer}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="accordion" expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+            <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Thursday</AccordionSummary>
+            <AccordionDetails className="cards">
+              {thursday.map(thursday =>(
+                <div className="card" key={thursday.id}>
+                  <div className="up">
+                    <h3>{thursday.time}</h3>
+                    <span>{thursday.exercise}</span>
+                  </div>
+                  <div className="line"></div>
+                  <div className="down">
+                    <div>
+                      <i class="fa-regular fa-clock"></i>
+                      <p>{thursday.duration}</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-user"></i>
+                      <p>{thursday.trainer}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="accordion" expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+            <AccordionSummary className="heading" expandIcon={<ExpandMoreIcon className="icon" />}>Friday</AccordionSummary>
+            <AccordionDetails className="cards">
+              {friday.map(friday =>(
+                <div className="card" key={friday.id}>
+                  <div className="up">
+                    <h3>{friday.time}</h3>
+                    <span>{friday.exercise}</span>
+                  </div>
+                  <div className="line"></div>
+                  <div className="down">
+                    <div>
+                      <i class="fa-regular fa-clock"></i>
+                      <p>{friday.duration}</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-user"></i>
+                      <p>{friday.trainer}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </AccordionDetails>
           </Accordion>
         </div>

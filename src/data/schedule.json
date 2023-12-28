@@ -2,106 +2,113 @@
     "monday": [
         {
             "id": 1,
-            "time": "10:00",
-            "exercise": "cross fit",
-            "duration": "60 mins",
-            "trainer": "ethan bell"
+            "time": "09:00",
+            "exercise": "Yoga",
+            "duration": "45 mins",
+            "trainer": "Sophia Garcia"
         },
         {
             "id": 2,
-            "time": "10:00",
-            "exercise": "cross fit",
+            "time": "11:30",
+            "exercise": "Pilates",
             "duration": "60 mins",
-            "trainer": "ethan bell"
+            "trainer": "James Johnson"
         }
     ],
 
     "tuesday": [
         {
             "id": 1,
-            "time": "10:00",
-            "exercise": "cross fit",
-            "duration": "60 mins",
-            "trainer": "ethan bell"
+            "time": "10:30",
+            "exercise": "Zumba",
+            "duration": "45 mins",
+            "trainer": "Isabella Martinez"
         },
         {
             "id": 2,
-            "time": "10:00",
-            "exercise": "cross fit",
-            "duration": "60 mins",
-            "trainer": "ethan bell"
+            "time": "13:00",
+            "exercise": "Strength Training",
+            "duration": "90 mins",
+            "trainer": "William Thompson"
         },
         {
             "id": 3,
-            "time": "10:00",
-            "exercise": "cross fit",
+            "time": "16:00",
+            "exercise": "Cycling",
             "duration": "60 mins",
-            "trainer": "ethan bell"
+            "trainer": "Olivia Clark"
         },
         {
             "id": 4,
-            "time": "10:00",
-            "exercise": "cross fit",
-            "duration": "60 mins",
-            "trainer": "ethan bell"
+            "time": "18:00",
+            "exercise": "boxing",
+            "duration": "45 mins",
+            "trainer": "Ethan Bell"
         }
     ],
-    
+
     "wednesday": [
         {
             "id": 1,
-            "time": "10:00",
-            "exercise": "cross fit",
+            "time": "08:30",
+            "exercise": "Pilates",
             "duration": "60 mins",
-            "trainer": "ethan bell"
+            "trainer": "Sophia Garcia"
         }
     ],
 
     "thursday": [
         {
             "id": 1,
-            "time": "10:00",
-            "exercise": "cross fit",
+            "time": "12:00",
+            "exercise": "Bootcamp",
             "duration": "60 mins",
-            "trainer": "ethan bell"
+            "trainer": "James Johnson"
         },
         {
             "id": 2,
-            "time": "10:00",
-            "exercise": "cross fit",
+            "time": "15:30",
+            "exercise": "Yoga",
+            "duration": "75 mins",
+            "trainer": "Isabella Martinez"
+        },
+        {
+            "id": 3,
+            "time": "18:00",
+            "exercise": "Functional Training",
             "duration": "60 mins",
-            "trainer": "ethan bell"
+            "trainer": "William Thompson"
         }
     ],
 
     "friday": [
         {
             "id": 1,
-            "time": "10:00",
-            "exercise": "cross fit",
-            "duration": "60 mins",
-            "trainer": "ethan bell"
+            "time": "09:30",
+            "exercise": "Zumba",
+            "duration": "45 mins",
+            "trainer": "Olivia Clark"
         },
         {
             "id": 2,
-            "time": "10:00",
-            "exercise": "cross fit",
+            "time": "11:00",
+            "exercise": "Cycling",
             "duration": "60 mins",
-            "trainer": "ethan bell"
+            "trainer": "Ethan Bell"
         },
         {
             "id": 3,
-            "time": "10:00",
-            "exercise": "cross fit",
-            "duration": "60 mins",
-            "trainer": "ethan bell"
+            "time": "14:00",
+            "exercise": "boxing",
+            "duration": "45 mins",
+            "trainer": "Sophia Garcia"
         },
         {
             "id": 4,
-            "time": "10:00",
-            "exercise": "cross fit",
+            "time": "17:30",
+            "exercise": "Pilates",
             "duration": "60 mins",
-            "trainer": "ethan bell"
+            "trainer": "James Johnson"
         }
     ]
 }

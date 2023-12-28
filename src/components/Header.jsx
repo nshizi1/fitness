@@ -18,6 +18,9 @@ function Header() {
           <li><a href="#contact">Contacts</a></li>
         </ul>
       </div>
+      <div className="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
   )
 }

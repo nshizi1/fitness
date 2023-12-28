@@ -28,7 +28,9 @@
     background-color: var(--primary--color);
     border-radius: 20px;
 }
-
+.hamburger{
+    display: none;
+}
 
 .progress-bar {
     position: fixed;
@@ -69,6 +71,7 @@ header{
             color: var(--primary--color);
         }
     }
+    
 }
 header.sticky{
     background-color: var(--black);
@@ -496,6 +499,17 @@ span{
             }
         }
     }
+    .links{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        & i{
+            font-size: 35px;
+            color: var(--primary--color)
+        }
+    }
 }
 @media screen AND (max-width: 830px){
     #about{
@@ -511,6 +525,14 @@ span{
     #class{
         & .cards{
             grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    #home{
+        & h1{
+            font-size: 50px;
+        }
+        & p{
+            width: 100%;
         }
     }
 }

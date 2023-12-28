@@ -457,7 +457,37 @@ span{
                     gap: .6rem;
                     color: var(--gray);
                     font-weight: 600;
+                    align-items: center;
                 }
+            }
+        }
+    }
+}
+
+@media screen AND (max-width: 1024px) {
+    #schedule{
+        & .accordion{
+            & .cards{
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: .5rem
+            }
+        }
+    }
+}
+@media screen AND (max-width: 980px) {
+    #schedule{
+        & .accordion{
+            & .cards{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+@media screen AND (max-width: 6600px) {
+    #schedule{
+        & .accordion{
+            & .cards{
+                grid-template-columns: 1fr;
             }
         }
     }

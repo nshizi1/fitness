@@ -27,7 +27,7 @@ function Home() {
   return (
     <main id='main'>
       <section id="home">
-        <h1>work hard.</h1>
+        <h1>work hard,</h1>
         <h1>feel proud.</h1>
         <p>Join <span>Nature Fitness Hub</span> today to improve your well-being and transform your body and mind through guided workouts.</p>
         <a href="#about"><button>Learn more</button></a>

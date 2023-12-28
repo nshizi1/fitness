@@ -223,57 +223,6 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="card">
-                <div className="up">
-                  <h3>10:00</h3>
-                  <span>Morning Yoga</span>
-                </div>
-                <div className="line"></div>
-                <div className="down">
-                  <div>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60 min</p>
-                  </div>
-                  <div>
-                    <i class="fa-solid fa-user"></i>
-                    <p>Isabella Chang</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="up">
-                  <h3>10:00</h3>
-                  <span>Morning Yoga</span>
-                </div>
-                <div className="line"></div>
-                <div className="down">
-                  <div>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60 min</p>
-                  </div>
-                  <div>
-                    <i class="fa-solid fa-user"></i>
-                    <p>Isabella Chang</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="up">
-                  <h3>10:00</h3>
-                  <span>Morning Yoga</span>
-                </div>
-                <div className="line"></div>
-                <div className="down">
-                  <div>
-                    <i class="fa-regular fa-clock"></i>
-                    <p>60 min</p>
-                  </div>
-                  <div>
-                    <i class="fa-solid fa-user"></i>
-                    <p>Isabella Chang</p>
-                  </div>
-                </div>
-              </div>
             </AccordionDetails>
           </Accordion>
         </div>

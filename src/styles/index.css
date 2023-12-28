@@ -573,6 +573,23 @@ span{
             padding: 10px 20px;
         }
     }
+    #about{
+        & .contents{
+            & .book{
+                & .form{
+                    padding: 20px 15px;
+                    & .input{
+                        font-size: 14px;
+                        padding: 10px;
+                    }
+                    & button{
+                        padding: 10px 15px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

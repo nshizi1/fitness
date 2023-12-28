@@ -77,6 +77,9 @@ header{
         visibility: hidden;
         opacity: 0;
     }
+    & .fa-solid{
+        display: none;
+    }
     
 }
 header.sticky{
@@ -473,12 +476,14 @@ span{
     }
 }
 
+
 @media screen AND (max-width: 1220px){
     #class{
         & .cards{
             grid-template-columns: repeat(2, 1fr);
         }
     }
+    
 }
 
 @media screen AND (max-width: 1024px) {
@@ -506,9 +511,7 @@ span{
         }
     }
     
-    header .fa-solid{
-        display: none;
-    }
+    
 
 }
 @media screen AND (max-width: 830px){
@@ -521,7 +524,7 @@ span{
         }
     }
     header .logo img{
-        width: 30px;
+        width: 40px;
     }
     header .fa-solid{
         display: block;

@@ -464,6 +464,14 @@ span{
     }
 }
 
+@media screen AND (max-width: 1220px){
+    #class{
+        & .cards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
 @media screen AND (max-width: 1024px) {
     #schedule{
         & .accordion{
@@ -473,6 +481,12 @@ span{
             }
         }
     }
+    #pricing{
+        & .cards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
 }
 @media screen AND (max-width: 980px) {
     #schedule{
@@ -483,12 +497,31 @@ span{
         }
     }
 }
-@media screen AND (max-width: 6600px) {
+@media screen AND (max-width: 830px){
+    #about{
+        & .contents{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+@media screen AND (max-width: 720px){
+    #class{
+        & .cards{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+@media screen AND (max-width: 660px) {
     #schedule{
         & .accordion{
             & .cards{
                 grid-template-columns: 1fr;
             }
+        }
+    }
+    #pricing{
+        & .cards{
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

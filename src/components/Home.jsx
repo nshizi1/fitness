@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Accordion from '@mui/material/Accordion';
@@ -8,6 +8,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import 'swiper/css';
 import data from '../data/team.json';
 import days from '../data/schedule.json';
+import { ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
 
 function Home() {
 
@@ -23,6 +26,49 @@ function Home() {
   const wednesday = days.wednesday;
   const thursday = days.thursday;
   const friday = days.friday;
+
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  }
+  const handlePhoneChange = (event) => {
+    setPhone(event.target.value);
+  }
+
+  const form = useRef();
+
+  const [loading, setLoading] = useState(false);
+
+  const book = (event) => {
+    event.preventDefault();
+    // console.log(name, phone);
+    if(name.trim()==="" && phone.trim()===""){
+      toast.error("Both fields are empty!");
+    }else if(name.trim()===""){
+      toast.warning("Please enter your name");
+    }else if(phone.trim()===""){
+      toast.warning("Please enter your phone");
+    }else{
+      setLoading(true);
+      emailjs.sendForm('service_p43m6qi', 'template_r7qrk2e', form.current, 'IOhB6Nxg-_2KrNZWL')
+      .then((result) => {
+        toast.success("Booking Successful!");
+        setName("");
+        setPhone("");
+      }, (error) => {
+        toast.success("Failed, try again!");
+        setName("");
+        setPhone("");
+      })
+      .finally(() => {
+        // After the booking process is complete (success or error), revert loading state
+        setLoading(false);
+      });
+    }
+  }
+
       
   return (
     <main id='main'>
@@ -43,17 +89,19 @@ function Home() {
             <p>Our center gives a warm welcome to all abilities and all age groups and we believe that our friendly atmosphere sets us apart as something special in the world of fitness training. Whether you are old or young, we hope to have something to excite you.</p>
           </div>
           <div className="book">
-            <div className='form'>
-              <div className="input">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" name="name" placeholder='Your names *' autoComplete='off'/>
+            <form ref={form}>
+              <div className='form'>
+                <div className="input">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" name="user_name" value={name} onChange={handleNameChange} placeholder='Your names *' autoComplete='off'/>
+                </div>
+                <div className="input">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="number" name="user_phone" value={phone} onChange={handlePhoneChange} placeholder='Your Phone *' autoComplete='off'/>
+                </div>
+                <button type="button" onClick={book} disabled={loading}>{loading ? 'Loading...' : 'Book a workout'}</button>
               </div>
-              <div className="input">
-                <i class="fa-solid fa-phone"></i>
-                <input type="tel" name="name" placeholder='Your Phone *' autoComplete='off'/>
-              </div>
-              <button type="submit">Book a workout</button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
@@ -332,6 +380,7 @@ function Home() {
           </Accordion>
         </div>
       </section>
+      <ToastContainer />
     </main>
   )
 }

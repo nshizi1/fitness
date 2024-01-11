@@ -679,6 +679,9 @@ footer{
             list-style: none;
             display: flex;
             gap: 1rem;
+            & a{
+                color: var(--white);
+            }
             & i{
                 font-size: 25px;
                 cursor: pointer;

@@ -75,7 +75,7 @@ function Home() {
       <section id="home">
         <h1>work hard,</h1>
         <h1>feel proud.</h1>
-        <p>Join <span>Nature Fitness Hub</span> today to improve your well-being and transform your body and mind through guided workouts.</p>
+        <p>Join <span>HO1_fitness program</span> today to improve your well-being and transform your body and mind through guided workouts.</p>
         <a href="#about"><button>Learn more</button></a>
       </section>
       <section id="about">
@@ -85,7 +85,9 @@ function Home() {
         </div>
         <div className="contents">
           <div className="content">
-            <p><span>Nature Fitness Hub</span> provides a relaxing, open atmosphere for exercise and wellness activities for everyone who cares about their well-being.</p>
+            <p>Since I was a kid, I used to love sports especially running. It kept giving me motivation and made me stronger. But back then, I didn’t quite understand what fitness was. When I reached high school, I got to experience bodybuilding and it was awesome and as i continued to build my physique it kept giving others motivation of gaining a great physique and staying health. That’s when I took the chance to coach them and help them reach their dreams and goals.</p>
+            <p>My goal is to be your support and motivation to reach your maximum capacity and stay fit and healthy, no matter what lifestyle you currently live in. Lets get that great physique and live life to the fullest.</p>
+            <p><span>HO1_fitness program</span> provides a relaxing, open atmosphere for exercise and wellness activities for everyone who cares about their well-being.</p>
             <p>Our center gives a warm welcome to all abilities and all age groups and we believe that our friendly atmosphere sets us apart as something special in the world of fitness training. Whether you are old or young, we hope to have something to excite you.</p>
           </div>
           <div className="book">
@@ -109,7 +111,7 @@ function Home() {
         <div className="title">
           <h2>Our classes</h2>
           <div className="line"></div>
-          <p>At <span>Nature Fitness Hub</span>, we offer a wide range of workouts and classes for everyone. Whatever your goal is, rest assured that our coaches have what you prefer.</p>
+          <p>At <span>HO1_fitness program</span>, we offer a wide range of workouts and classes for everyone. Whatever your goal is, rest assured that our coaches have what you prefer.</p>
         </div>
         <div className="cards">
 
@@ -264,7 +266,7 @@ function Home() {
               {monday.map(monday =>(
                 <div className="card" key={monday.id}>
                   <div className="up">
-                    <h3>{monday.time}</h3>
+                    <h3>{monday.start}</h3>
                     <span>{monday.exercise}</span>
                   </div>
                   <div className="line"></div>
@@ -274,8 +276,7 @@ function Home() {
                       <p>{monday.duration}</p>
                     </div>
                     <div>
-                      <i class="fa-solid fa-user"></i>
-                      <p>{monday.trainer}</p>
+                      <p>{monday.end}</p>
                     </div>
                   </div>
                 </div>
@@ -288,7 +289,7 @@ function Home() {
               {tuesday.map(tuesday =>(
                 <div className="card" key={tuesday.id}>
                   <div className="up">
-                    <h3>{tuesday.time}</h3>
+                    <h3>{tuesday.start}</h3>
                     <span>{tuesday.exercise}</span>
                   </div>
                   <div className="line"></div>
@@ -298,8 +299,7 @@ function Home() {
                       <p>{tuesday.duration}</p>
                     </div>
                     <div>
-                      <i class="fa-solid fa-user"></i>
-                      <p>{tuesday.trainer}</p>
+                      <p>{tuesday.end}</p>
                     </div>
                   </div>
                 </div>
@@ -312,7 +312,7 @@ function Home() {
               {wednesday.map(wednesday =>(
                 <div className="card" key={wednesday.id}>
                   <div className="up">
-                    <h3>{wednesday.time}</h3>
+                    <h3>{wednesday.start}</h3>
                     <span>{wednesday.exercise}</span>
                   </div>
                   <div className="line"></div>
@@ -322,8 +322,7 @@ function Home() {
                       <p>{wednesday.duration}</p>
                     </div>
                     <div>
-                      <i class="fa-solid fa-user"></i>
-                      <p>{wednesday.trainer}</p>
+                      <p>{wednesday.end}</p>
                     </div>
                   </div>
                 </div>
@@ -336,7 +335,7 @@ function Home() {
               {thursday.map(thursday =>(
                 <div className="card" key={thursday.id}>
                   <div className="up">
-                    <h3>{thursday.time}</h3>
+                    <h3>{thursday.start}</h3>
                     <span>{thursday.exercise}</span>
                   </div>
                   <div className="line"></div>
@@ -346,8 +345,7 @@ function Home() {
                       <p>{thursday.duration}</p>
                     </div>
                     <div>
-                      <i class="fa-solid fa-user"></i>
-                      <p>{thursday.trainer}</p>
+                      <p>{thursday.end}</p>
                     </div>
                   </div>
                 </div>
@@ -360,7 +358,7 @@ function Home() {
               {friday.map(friday =>(
                 <div className="card" key={friday.id}>
                   <div className="up">
-                    <h3>{friday.time}</h3>
+                    <h3>{friday.start}</h3>
                     <span>{friday.exercise}</span>
                   </div>
                   <div className="line"></div>
@@ -370,8 +368,7 @@ function Home() {
                       <p>{friday.duration}</p>
                     </div>
                     <div>
-                      <i class="fa-solid fa-user"></i>
-                      <p>{friday.trainer}</p>
+                      <p>{friday.end}</p>
                     </div>
                   </div>
                 </div>

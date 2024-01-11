@@ -2,113 +2,85 @@
     "monday": [
         {
             "id": 1,
-            "time": "09:00",
-            "exercise": "Yoga",
-            "duration": "45 mins",
-            "trainer": "Sophia Garcia"
+            "start": "06:00 AM",
+            "exercise": "Opened",
+            "duration": "Closed",
+            "end": "07:00 AM"
         },
         {
             "id": 2,
-            "time": "11:30",
-            "exercise": "Pilates",
-            "duration": "60 mins",
-            "trainer": "James Johnson"
+            "start": "08:00 PM",
+            "exercise": "Opened",
+            "duration": "Closed",
+            "end": "10:00 PM"
         }
     ],
 
     "tuesday": [
         {
             "id": 1,
-            "time": "10:30",
-            "exercise": "Zumba",
-            "duration": "45 mins",
-            "trainer": "Isabella Martinez"
+            "start": "08:00 PM",
+            "exercise": "Opened",
+            "duration": "Closed",
+            "end": "10:00 PM"
         },
         {
             "id": 2,
-            "time": "13:00",
-            "exercise": "Strength Training",
-            "duration": "90 mins",
-            "trainer": "William Thompson"
-        },
-        {
-            "id": 3,
-            "time": "16:00",
-            "exercise": "Cycling",
-            "duration": "60 mins",
-            "trainer": "Olivia Clark"
-        },
-        {
-            "id": 4,
-            "time": "18:00",
-            "exercise": "boxing",
-            "duration": "45 mins",
-            "trainer": "Ethan Bell"
+            "start": "08:00 PM",
+            "exercise": "Opened",
+            "duration": "Closed",
+            "end": "10:00 PM"
         }
     ],
 
     "wednesday": [
         {
             "id": 1,
-            "time": "08:30",
-            "exercise": "Pilates",
-            "duration": "60 mins",
-            "trainer": "Sophia Garcia"
+            "start": "08:00 PM",
+            "exercise": "Opened",
+            "duration": "Closed",
+            "end": "10:00 PM"
+        },
+        {
+            "id": 2,
+            "start": "08:00 PM",
+            "exercise": "Opened",
+            "duration": "Closed",
+            "end": "10:00 PM"
         }
     ],
 
     "thursday": [
         {
             "id": 1,
-            "time": "12:00",
-            "exercise": "Bootcamp",
-            "duration": "60 mins",
-            "trainer": "James Johnson"
+           "start": "08:00 PM",
+            "exercise": "Opened",
+            "duration": "Closed",
+            "end": "10:00 PM"
         },
         {
             "id": 2,
-            "time": "15:30",
-            "exercise": "Yoga",
-            "duration": "75 mins",
-            "trainer": "Isabella Martinez"
-        },
-        {
-            "id": 3,
-            "time": "18:00",
-            "exercise": "Functional Training",
-            "duration": "60 mins",
-            "trainer": "William Thompson"
+            "start": "08:00 PM",
+            "exercise": "Opened",
+            "duration": "Closed",
+            "end": "10:00 PM"
         }
     ],
 
     "friday": [
         {
             "id": 1,
-            "time": "09:30",
-            "exercise": "Zumba",
-            "duration": "45 mins",
-            "trainer": "Olivia Clark"
+            "start": "08:00 PM",
+            "exercise": "Opened",
+            "duration": "Closed",
+            "end": "10:00 PM"
         },
         {
             "id": 2,
-            "time": "11:00",
-            "exercise": "Cycling",
-            "duration": "60 mins",
-            "trainer": "Ethan Bell"
-        },
-        {
-            "id": 3,
-            "time": "14:00",
-            "exercise": "boxing",
-            "duration": "45 mins",
-            "trainer": "Sophia Garcia"
-        },
-        {
-            "id": 4,
-            "time": "17:30",
-            "exercise": "Pilates",
-            "duration": "60 mins",
-            "trainer": "James Johnson"
+            "start": "08:00 PM",
+            "exercise": "Opened",
+            "duration": "Closed",
+            "end": "10:00 PM"
         }
     ]
 }
